@@ -38,9 +38,16 @@ int main() {
             cout << "exit" << endl;
             cout << "ip" << endl;
             cout << "files" << endl;
+            cout << "forza ferrari" << endl; // Přidáno do nápovědy
         }
 
         if (neco == "reset") {
+            #ifdef _WIN32
+                system("cls"); // Vymaže obrazovku na Windows
+            #else
+                system("clear"); // Vymaže obrazovku na Linuxu/macOS
+            #endif
+
             cout << "  .,.,.        .,.,.       .,.,.,    .,.,.,.,.,." << endl;
             cout << " .,.,.,.,.    .,.,.,.,.    .,.,.,.,   .,.,.,.,.,." << endl;
             cout << ",.,.  .,.,   ,.,.  .,.,   .,.,.         .,.,.   " << endl;
@@ -87,7 +94,6 @@ int main() {
             cout << "forza ferrari" << endl;
         }
         
-        // OPRAVENO: Přidány uvozovky kolem názvu souboru/příkazu
         if (neco == "verstappen33") {
             cout << "file opened" << endl;
             cout << ",.,.,.   ,.,.,." << endl;
@@ -96,16 +102,18 @@ int main() {
             cout << "    ,.       ,." << endl;
             cout << ",.,.,.   ,.,.,." << endl;
         }
-        if (neco == forza ferrari) {
-            cout << "    .,.   ,.,.,.,." << endl;
-cout << "   .,.,.  ,.       .,.,.,.   ,.,.,.   ,.,.,.   ,.,.,.   ,.,.,." << endl;
-cout << "   ,. ,.  ,.,.,.   ,.       ,.   ,.   ,.  ,.   ,.      ,." << endl;
-cout << "  ,.,.,.  ,.       ,.       ,.   ,.   ,.  ,.        ,. ," << endl;
-cout << "  ,.  ,.  ,.       ,.,.,.   ,.,.,.   ,.   ,.  ,.,.,.   ,.,.,." << endl;
-cout << "          ==       =========================================" << endl;
-cout << "                   -----------------------------------------" << endl;
-cout << "                   ........................................." << endl;
 
+        // OPRAVENO: Přidány uvozovky kolem řetězce "forza ferrari"
+        if (neco == "forza ferrari") {
+            cout << "file opened" << endl;
+            cout << "    .,.   ,.,.,.,." << endl;
+            cout << "   .,.,.  ,.       .,.,.,.   ,.,.,.   ,.,.,.   ,.,.,.   ,.,.,." << endl;
+            cout << "   ,. ,.  ,.,.,.   ,.       ,.   ,.   ,.  ,.   ,.      ,." << endl;
+            cout << "  ,.,.,.  ,.       ,.       ,.   ,.   ,.  ,.        ,. ," << endl;
+            cout << "  ,.  ,.  ,.       ,.,.,.   ,.,.,.   ,.   ,.  ,.,.,.   ,.,.,." << endl;
+            cout << "          ==       =========================================" << endl;
+            cout << "                   -----------------------------------------" << endl;
+            cout << "                   ........................................." << endl;
         }
 
         cout << endl;
